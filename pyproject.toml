@@ -7,6 +7,9 @@ name = "recap-ferme"
 description = "The latest results of the Formula 1 championship and races"
 version = "0.1.0"
 requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.34"
+]
 readme = "README.md"
 license = "MIT"
 
@@ -15,5 +18,6 @@ recap-ferme = "recap_ferme.cli:main"
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=9"
+    "pytest>=9",
+    "responses>=0.26"
 ]
